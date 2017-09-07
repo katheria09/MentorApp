@@ -7,7 +7,7 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     android:background="@color/app_color">
 
-    <hackathonayush.mentor.Model.MentorLightTextView
+    <com.logicturtle.hackathon.Model.MentorLightTextView
         android:id="@+id/toolbar_title_regular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
