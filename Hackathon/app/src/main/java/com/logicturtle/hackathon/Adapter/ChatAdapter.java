@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import com.logicturtle.hackathon.View.ChatViewHolder;
 
 import com.logicturtle.hackathon.R;
-import com.logicturtle.hackathon.View.ChatViewHolder;
 
 
 public class ChatAdapter extends RecyclerView.Adapter<ChatViewHolder> {

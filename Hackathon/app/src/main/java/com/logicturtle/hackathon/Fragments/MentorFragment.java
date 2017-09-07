@@ -21,7 +21,6 @@ import com.logicturtle.hackathon.Model.MentorLightTextView;
 import butterknife.ButterKnife;
 
 import com.logicturtle.hackathon.R;
-import com.logicturtle.hackathon.R;
 
 
 abstract public class MentorFragment extends Fragment {

@@ -9,9 +9,6 @@ import android.view.ViewGroup;
 import com.logicturtle.hackathon.R;
 import com.logicturtle.hackathon.View.GetMentorViewHolder;
 
-/**
- * Created by user on 02-Sep-17.
- */
 
 public class GetMentorAdapter extends RecyclerView.Adapter<GetMentorViewHolder> {
 

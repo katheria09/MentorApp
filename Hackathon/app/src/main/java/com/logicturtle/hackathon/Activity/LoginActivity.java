@@ -4,7 +4,6 @@ import android.support.v4.app.Fragment;
 
 import com.logicturtle.hackathon.Fragments.ForumFragment;
 
-import com.logicturtle.hackathon.Fragments.ForumFragment;
 import com.logicturtle.hackathon.R;
 
 public class LoginActivity extends MentorSingleFragmentActivity {

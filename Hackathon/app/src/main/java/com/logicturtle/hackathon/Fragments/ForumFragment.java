@@ -8,7 +8,6 @@ import android.view.View;
 import com.astuetz.PagerSlidingTabStrip;
 import com.logicturtle.hackathon.Adapter.ViewPagerAdapter;
 
-import com.logicturtle.hackathon.Adapter.ViewPagerAdapter;
 import com.logicturtle.hackathon.R;
 
 
