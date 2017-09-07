@@ -7,8 +7,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.logicturtle.hackathon.R;
 
-public class TermsAndConditionsFragment extends Fragment {
+
+public class TermsAndConditionsFragment extends MentorFragment {
+    @Override
+    protected int getLayoutResId() {
+        return R.layout.fragment_terms;
+    }
+
+    @Override
+    protected String setToolbarTitle() {
+        return null;
+    }
 
     @Nullable
     @Override
