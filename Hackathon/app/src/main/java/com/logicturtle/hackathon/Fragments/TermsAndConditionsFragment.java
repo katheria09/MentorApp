@@ -7,9 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by kunwar on 7/9/17.
- */
 
 public class TermsAndConditionsFragment extends Fragment {
 
