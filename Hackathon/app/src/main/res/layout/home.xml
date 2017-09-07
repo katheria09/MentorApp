@@ -23,7 +23,7 @@
                 android:layout_margin="@dimen/margin_10dp"
                 android:src="@drawable/model" />
 
-            <hackathonayush.mentor.Model.MentorBoldTextView
+            <com.logicturtle.hackathon.Model.MentorBoldTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -63,7 +63,7 @@
                     android:paddingTop="@dimen/margin_5dp"
                     android:src="@drawable/ic_location_24dp" />
 
-                <hackathonayush.mentor.Model.MentorLightTextView
+                <com.logicturtle.hackathon.Model.MentorLightTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/margin_30dp"
@@ -89,7 +89,7 @@
                     android:tint="@color/black"
                     android:src="@drawable/ic_drawer_profile" />
 
-                <hackathonayush.mentor.Model.MentorLightTextView
+                <com.logicturtle.hackathon.Model.MentorLightTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/margin_30dp"
@@ -115,7 +115,7 @@
                     android:paddingTop="@dimen/margin_5dp"
                     android:src="@drawable/ic_mentor_24dp" />
 
-                <hackathonayush.mentor.Model.MentorLightTextView
+                <com.logicturtle.hackathon.Model.MentorLightTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/margin_30dp"
@@ -141,7 +141,7 @@
                     android:paddingTop="@dimen/margin_5dp"
                     android:src="@drawable/ic_email_24dp" />
 
-                <hackathonayush.mentor.Model.MentorLightTextView
+                <com.logicturtle.hackathon.Model.MentorLightTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/margin_30dp"
@@ -185,6 +185,32 @@
                 android:background="@color/black" />
 
             <LinearLayout
+                android:id="@+id/terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:paddingBottom="@dimen/margin_5dp"
+                    android:paddingTop="@dimen/margin_5dp"
+                    android:src="@drawable/ic_share_24dp" />
+
+                <com.logicturtle.hackathon.Model.MentorLightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_30dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:padding="5dp"
+                    android:text="Terms And Conditions"
+                    android:textSize="@dimen/textSize_20" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
                 android:id="@+id/share"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -198,7 +224,7 @@
                     android:paddingTop="@dimen/margin_5dp"
                     android:src="@drawable/ic_share_24dp" />
 
-                <hackathonayush.mentor.Model.MentorLightTextView
+                <com.logicturtle.hackathon.Model.MentorLightTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/margin_30dp"
@@ -224,7 +250,7 @@
                     android:tint="@color/black"
                     android:src="@drawable/logout" />
 
-                <hackathonayush.mentor.Model.MentorLightTextView
+                <com.logicturtle.hackathon.Model.MentorLightTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/margin_30dp"
