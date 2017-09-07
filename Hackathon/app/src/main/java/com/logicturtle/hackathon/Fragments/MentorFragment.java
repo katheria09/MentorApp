@@ -23,9 +23,6 @@ import butterknife.ButterKnife;
 import com.logicturtle.hackathon.R;
 import com.logicturtle.hackathon.R;
 
-/**
- * Created by user on 19-Jun-17.
- */
 
 abstract public class MentorFragment extends Fragment {
 

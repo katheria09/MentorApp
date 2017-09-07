@@ -11,14 +11,10 @@ import com.jaredrummler.materialspinner.MaterialSpinner;
 import com.logicturtle.hackathon.R;
 
 
-public class LoginFragment extends MentorFragment {
-
-    public LoginFragment() {
-    }
-
+public class SignupFragment extends MentorFragment {
     @Override
     protected int getLayoutResId() {
-        return R.layout.fragment_signin;
+        return R.layout.fragment_signup;
     }
 
     @Override
@@ -27,8 +23,8 @@ public class LoginFragment extends MentorFragment {
     }
 
     public static Fragment getNewInstance() {
-        LoginFragment loginFragment = new LoginFragment();
-        return loginFragment;
+        SignupFragment signupFragment = new SignupFragment();
+        return signupFragment;
     }
 
     @Override
@@ -46,6 +42,4 @@ public class LoginFragment extends MentorFragment {
             }
         });
     }
-
-
 }
