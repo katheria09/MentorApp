@@ -10,9 +10,6 @@ import com.jaredrummler.materialspinner.MaterialSpinner;
 
 import com.logicturtle.hackathon.R;
 
-/**
- * Created by user on 02-Sep-17.
- */
 
 public class LoginFragment extends MentorFragment {
 
