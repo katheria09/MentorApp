@@ -38,7 +38,7 @@ abstract public class MentorSingleFragmentActivity extends MentorActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN
                 | WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE
                 | WindowManager.LayoutParams.SOFT_INPUT_STATE_UNCHANGED);
-        a2doodhLightTextView = (MentorLightTextView) findViewById(R.id.toolbar_title_regular);
+        LightTextView = (MentorLightTextView) findViewById(R.id.toolbar_title_regular);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setVisibility(View.GONE);
         if (visibleToolBar()) {

@@ -2,8 +2,10 @@ package com.logicturtle.hackathon.Activity;
 
 import android.support.v4.app.Fragment;
 
-import hackathonayush.mentor.Fragments.ForumFragment;
-import hackathonayush.mentor.R;
+import com.logicturtle.hackathon.Fragments.ForumFragment;
+
+import com.logicturtle.hackathon.Fragments.ForumFragment;
+import com.logicturtle.hackathon.R;
 
 public class LoginActivity extends MentorSingleFragmentActivity {
 
