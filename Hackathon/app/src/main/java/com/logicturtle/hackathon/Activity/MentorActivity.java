@@ -17,7 +17,7 @@ abstract public class MentorActivity extends MentorToolbarCustomise {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutResourceID());
-        LightTextView = (MentorLightTextView) findViewById(R.id.toolbar_title_regular);
+        a2doodhLightTextView = (MentorLightTextView) findViewById(R.id.toolbar_title_regular);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         handleToolbar();
         setToolbarTitle();
@@ -32,7 +32,7 @@ abstract public class MentorActivity extends MentorToolbarCustomise {
         return super.onOptionsItemSelected(item);
     }
 
-    protected void displayBackButton() {
+    protected  void displayBackButton(){
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setHomeButtonEnabled(true);

@@ -1,5 +1,7 @@
 package com.logicturtle.hackathon.Activity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -14,11 +16,12 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.logicturtle.hackathon.R;
-
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-
+import com.logicturtle.hackathon.Fragments.GetMentorFragment;
+import com.logicturtle.hackathon.Fragments.LoginFragment;
+import com.logicturtle.hackathon.Fragments.MessagesFragment;
+import com.logicturtle.hackathon.R;
 import nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout;
 import nl.psdcompany.duonavigationdrawer.widgets.DuoDrawerToggle;
 
@@ -46,7 +49,7 @@ public class HomeActivity extends MentorToolbarCustomise {
         ScrollView scrollView = (ScrollView) findViewById(R.id.scroll_view);
         scrollView.setVerticalScrollbarPosition(View.SCROLLBAR_POSITION_LEFT);
         mViewHolder = new ViewHolder();
-        //  goToFragment(HomeFragment.getNewInstance(),false,R.id.container);
+        goToFragment(MessagesFragment.getNewInstance(), false, R.id.container);
         Toolbar();
         handleDrawer();
         title = getToolbarTitle(R.id.home);
@@ -67,6 +70,13 @@ public class HomeActivity extends MentorToolbarCustomise {
                 R.string.navigation_drawer_close);
         mViewHolder.mDuoDrawerLayout.setDrawerListener(duoDrawerToggle);
         duoDrawerToggle.syncState();
+    }
+
+
+    public static Intent getNewInstance(Context context) {
+        Intent intent = new Intent(context, HomeActivity.class);
+        return intent;
+
     }
 
 
@@ -96,13 +106,13 @@ public class HomeActivity extends MentorToolbarCustomise {
         setToolbarTitle();
         changeTintColor(R.id.members);
         closeDrawer();
-        //  replaceFragment(LoginFragment.getNewInstance(),false,R.id.container);
+        replaceFragment(LoginFragment.getNewInstance(),false,R.id.container);
 
     }
 
     @OnClick(R.id.invites)
     public void invites() {
-        //  replaceFragment(new GetMentorFragment(),false,R.id.container);
+        replaceFragment(new GetMentorFragment(),false,R.id.container);
         title = getToolbarTitle(R.id.invites);
         restoreViewsColor(R.id.linear_lout);
         setToolbarTitle();
@@ -119,16 +129,6 @@ public class HomeActivity extends MentorToolbarCustomise {
 //        closeDrawer();
 //    }
 
-    @OnClick(R.id.terms)
-    public void terms() {
-        title = getToolbarTitle(R.id.terms);
-        restoreViewsColor(R.id.linear_lout);
-        setToolbarTitle();
-        changeTintColor(R.id.terms);
-        closeDrawer();
-    }
-
-
     @OnClick(R.id.share)
     public void share() {
         title = getToolbarTitle(R.id.share);
@@ -137,6 +137,8 @@ public class HomeActivity extends MentorToolbarCustomise {
         changeTintColor(R.id.share);
         closeDrawer();
     }
+
+
 
 
     @OnClick(R.id.logout)
@@ -183,7 +185,7 @@ public class HomeActivity extends MentorToolbarCustomise {
             if (view instanceof TextView) {
                 int a = ((TextView) view).getCurrentTextColor();
                 String hexColor = String.format("#%06X", (0xFFFFFF & a));
-                Log.d("ayush", "hex: " + hexColor);
+                Log.d("ayush","hex: "+hexColor);
 
                 if (hexColor.equals("#000000")) {
                     ((TextView) view).setTextColor(getResources().getColor(R.color.select));

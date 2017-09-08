@@ -2,15 +2,17 @@ package com.logicturtle.hackathon.Activity;
 
 import android.support.v4.app.Fragment;
 
-import com.logicturtle.hackathon.Fragments.SignupFragment;
+import com.logicturtle.hackathon.Fragments.GetMentorFragment;
 import com.logicturtle.hackathon.R;
 
-
+/**
+ * Created by kunwar on 7/9/17.
+ */
 
 public class SignUpActivity extends MentorSingleFragmentActivity {
     @Override
     protected Fragment createFragment() {
-        return SignupFragment.getNewInstance();
+        return GetMentorFragment.getNewInstance();
     }
 
     @Override

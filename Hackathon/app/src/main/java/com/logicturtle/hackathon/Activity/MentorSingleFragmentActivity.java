@@ -12,6 +12,9 @@ import android.view.WindowManager;
 import com.logicturtle.hackathon.Model.MentorLightTextView;
 import com.logicturtle.hackathon.R;
 
+/**
+ * Created by user on 19-Jun-17.
+ */
 
 abstract public class MentorSingleFragmentActivity extends MentorActivity {
 
@@ -38,7 +41,7 @@ abstract public class MentorSingleFragmentActivity extends MentorActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN
                 | WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE
                 | WindowManager.LayoutParams.SOFT_INPUT_STATE_UNCHANGED);
-        LightTextView = (MentorLightTextView) findViewById(R.id.toolbar_title_regular);
+        a2doodhLightTextView = (MentorLightTextView) findViewById(R.id.toolbar_title_regular);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setVisibility(View.GONE);
         if (visibleToolBar()) {

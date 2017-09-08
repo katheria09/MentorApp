@@ -2,8 +2,7 @@ package com.logicturtle.hackathon.Activity;
 
 import android.support.v4.app.Fragment;
 
-import com.logicturtle.hackathon.Fragments.ForumFragment;
-
+import com.logicturtle.hackathon.Fragments.LoginFragment;
 import com.logicturtle.hackathon.R;
 
 public class LoginActivity extends MentorSingleFragmentActivity {
@@ -11,8 +10,7 @@ public class LoginActivity extends MentorSingleFragmentActivity {
 
     @Override
     protected Fragment createFragment() {
-//        return LoginFragment.getNewInstance();
-        return new ForumFragment();
+        return LoginFragment.getNewInstance();
     }
 
     @Override

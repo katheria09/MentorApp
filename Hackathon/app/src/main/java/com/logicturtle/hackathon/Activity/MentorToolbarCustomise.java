@@ -12,11 +12,14 @@ import android.view.WindowManager;
 import com.logicturtle.hackathon.Model.MentorLightTextView;
 import com.logicturtle.hackathon.R;
 
+/**
+ * Created by user on 18-Jun-17.
+ */
 
 abstract public class MentorToolbarCustomise extends AppCompatActivity {
 
     public Toolbar toolbar;
-    public MentorLightTextView LightTextView;
+    public MentorLightTextView a2doodhLightTextView;
 
     abstract protected int getLayoutResourceID();
 
@@ -31,7 +34,7 @@ abstract public class MentorToolbarCustomise extends AppCompatActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN
                 | WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE
                 | WindowManager.LayoutParams.SOFT_INPUT_STATE_UNCHANGED);
-        LightTextView = (MentorLightTextView) findViewById(R.id.toolbar_title_regular);
+        a2doodhLightTextView = (MentorLightTextView) findViewById(R.id.toolbar_title_regular);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         handleToolbar();
         setToolbarTitle();
@@ -43,8 +46,8 @@ abstract public class MentorToolbarCustomise extends AppCompatActivity {
     }
 
     protected void setToolbarTitle() {
-        if (LightTextView != null) {
-            LightTextView.setText(setTitleForToolbar());
+        if (a2doodhLightTextView != null) {
+            a2doodhLightTextView.setText(setTitleForToolbar());
         }
     }
 
@@ -58,6 +61,8 @@ abstract public class MentorToolbarCustomise extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         return super.onOptionsItemSelected(item);
     }
+
+
 
 
 }
