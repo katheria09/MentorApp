@@ -6,9 +6,9 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 
 import com.astuetz.PagerSlidingTabStrip;
+import com.logicturtle.hackathon.Adapter.ViewPagerAdapter;
 
-import hackathonayush.mentor.Adapter.ViewPagerAdapter;
-import hackathonayush.mentor.R;
+import com.logicturtle.hackathon.R;
 
 
 public class ForumFragment extends MentorFragment {

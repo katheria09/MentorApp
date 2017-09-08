@@ -6,7 +6,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import com.logicturtle.hackathon.Fragments.SignupFragment;
 
-import com.logicturtle.hackathon.R;
 
 
 
