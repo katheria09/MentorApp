@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/large_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/shraddha_kapoor" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/small_imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/shraddha_kapoor" />
+
+        <hackathonayush.mentor.Model.MentorRegularTextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_20"
+            android:text="User Name"
+            android:gravity="center"
+            android:padding="@dimen/margin_10dp"
+            android:layout_below="@id/small_imageview"
+            android:layout_height="wrap_content" />
+
+        <hackathonayush.mentor.Model.MentorLightTextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:padding="@dimen/margin_5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_15"
+            android:text="I am a Machine Learning administrator in Google."
+            android:gravity="center_horizontal"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"></LinearLayout>
+
+</LinearLayout>
+
+
+    <fragment
+        android:layout_gravity="end"
+        android:id="@+id/filter_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:name="hackathonayush.mentor.Fragments.SideNavFragment" />
+
+</android.support.v4.widget.DrawerLayout>
