@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_30dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_10dp"
+        android:src="@drawable/model" />
+
+    <com.logicturtle.hackathon.Model.MentorRegularTextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:text="John Doe"
+        android:textSize="30sp" />
+
+    <com.logicturtle.hackathon.Model.MentorLightTextView
+        android:id="@+id/techSkill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_0.5dp"
+        android:text="I am a Android Developer"
+        android:textColor="@color/select"
+        android:textSize="@dimen/textSize_20" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@color/app_color"
+        android:paddingLeft="@dimen/margin_30dp" />
+
+
+    <com.logicturtle.hackathon.Model.MentorLightTextView
+        android:id="@+id/tech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:text="Android"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/invitation"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/invitation"
+                android:tint="@color/select" />
+
+            <ImageView
+                android:id="@+id/tick"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/checked" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

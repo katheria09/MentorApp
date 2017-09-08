@@ -16,17 +16,17 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-import com.logicturtle.hackathon.Model.MentorLightTextView;
-
 import butterknife.ButterKnife;
-
+import com.logicturtle.hackathon.Model.MentorLightTextView;
 import com.logicturtle.hackathon.R;
+
 
 
 abstract public class MentorFragment extends Fragment {
 
     protected Toolbar toolbar;
     protected MentorLightTextView a2doodhLightTextView;
+
 
 
     public MentorFragment() {
@@ -107,11 +107,22 @@ abstract public class MentorFragment extends Fragment {
                 getView().getApplicationWindowToken(),
                 InputMethodManager.SHOW_FORCED, 0);
     }
-
-//    public void playSound() {
-//        MediaPlayer ring = MediaPlayer.create(getContext(), R.raw.click);
+//
+//    public void playSound(){
+//        MediaPlayer ring= MediaPlayer.create(getContext(),R.raw.click);
 //        ring.start();
 //    }
 
+    protected void goToFragment(Fragment fragment, boolean addToBackStack, int container) {
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+
+        if (addToBackStack) {
+            transaction.addToBackStack(null);
+        }
+        if (fragmentManager.findFragmentById(R.id.container) == null) {
+            transaction.add(container, fragment).commit();
+        }
+    }
 
 }

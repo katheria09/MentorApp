@@ -3,7 +3,9 @@ package com.logicturtle.hackathon.Model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-
+/**
+ * Created by kunwar on 7/9/17.
+ */
 
 public class StudentSignUp {
 
@@ -19,5 +21,15 @@ public class StudentSignUp {
     @SerializedName("registration")
     String status;
 
+    public String getName() {
+        return name;
+    }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public String getStatus() {
+        return status;
+    }
 }

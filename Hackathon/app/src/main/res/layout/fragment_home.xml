@@ -30,7 +30,7 @@
             android:layout_marginTop="30dp"
             android:src="@drawable/shraddha_kapoor" />
 
-        <hackathonayush.mentor.Model.MentorRegularTextView
+        <com.logicturtle.hackathon.Model.MentorRegularTextView
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:textColor="@color/white"
@@ -41,7 +41,7 @@
             android:layout_below="@id/small_imageview"
             android:layout_height="wrap_content" />
 
-        <hackathonayush.mentor.Model.MentorLightTextView
+        <com.logicturtle.hackathon.Model.MentorLightTextView
             android:id="@+id/about"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -68,6 +68,6 @@
         android:id="@+id/filter_drawer"
         android:layout_width="240dp"
         android:layout_height="match_parent"
-        android:name="hackathonayush.mentor.Fragments.SideNavFragment" />
+        android:name="com.logicturtle.hackathon.Fragments.SideNavFragment" />
 
 </android.support.v4.widget.DrawerLayout>
