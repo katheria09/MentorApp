@@ -59,7 +59,7 @@ public class HomeActivity extends MentorToolbarCustomise {
         ScrollView scrollView = (ScrollView) findViewById(R.id.scroll_view);
         scrollView.setVerticalScrollbarPosition(View.SCROLLBAR_POSITION_LEFT);
         mViewHolder = new ViewHolder();
-        goToFragment(ForumFragment.getNewInstance(), false, R.id.container);
+        goToFragment(HomeFragment.getNewInstance(), false, R.id.container);
         Toolbar();
         handleDrawer();
         title = getToolbarTitle(R.id.home);
@@ -92,7 +92,7 @@ public class HomeActivity extends MentorToolbarCustomise {
 
     @OnClick(R.id.home)
     public void home() {
-        replaceFragment(ForumFragment.getNewInstance(), false, R.id.container);
+        replaceFragment(HomeFragment.getNewInstance(), false, R.id.container);
         title = getToolbarTitle(R.id.home);
         restoreViewsColor(R.id.linear_lout);
         setToolbarTitle();

@@ -150,7 +150,7 @@ public class SideNavFragment extends Fragment {
                 if (dataSnapshot.exists()) {
                     Log.i("kunwar", "fragment" + dataSnapshot);
                     Message message = dataSnapshot.getValue(Message.class);
-                    if (message.getSender().equals(name)) {
+                        if (message.getSender().equals(name)) {
                         String content = message.getMessage();
                         Long time = Long.parseLong(message.getTime());
                         String sender = message.getSender();
