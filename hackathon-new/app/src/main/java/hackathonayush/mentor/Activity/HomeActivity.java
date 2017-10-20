@@ -23,8 +23,10 @@ import hackathonayush.mentor.Fragments.GetMentorFragment;
 import hackathonayush.mentor.Fragments.HomeFragment;
 import hackathonayush.mentor.Fragments.InviteFragment;
 import hackathonayush.mentor.Fragments.LoginFragment;
+import hackathonayush.mentor.Fragments.ProfileFragment;
 import hackathonayush.mentor.Fragments.ViewPagerFragment;
 import hackathonayush.mentor.R;
+import hackathonayush.mentor.Utils.SharedPrefs;
 import nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout;
 import nl.psdcompany.duonavigationdrawer.widgets.DuoDrawerToggle;
 
@@ -33,6 +35,11 @@ public class HomeActivity extends MentorToolbarCustomise {
     private ViewHolder mViewHolder;
     private String title = "Home", title1;
     FragmentManager fragmentManager;
+
+
+
+
+
 
     @Override
     protected int getLayoutResourceID() {
@@ -85,7 +92,7 @@ public class HomeActivity extends MentorToolbarCustomise {
 
     @OnClick(R.id.home)
     public void home() {
-        replaceFragment(ViewPagerFragment.getNewInstance(), false, R.id.container);
+        replaceFragment(ForumFragment.getNewInstance(), false, R.id.container);
         title = getToolbarTitle(R.id.home);
         restoreViewsColor(R.id.linear_lout);
         setToolbarTitle();
@@ -100,6 +107,8 @@ public class HomeActivity extends MentorToolbarCustomise {
         setToolbarTitle();
         changeTintColor(R.id.my_profile);
         closeDrawer();
+        replaceFragment(ProfileFragment.getNewInstance(SharedPrefs.getID(this)),false,R.id.container);
+
 
     }
 
@@ -110,7 +119,7 @@ public class HomeActivity extends MentorToolbarCustomise {
         setToolbarTitle();
         changeTintColor(R.id.members);
         closeDrawer();
-        replaceFragment(LoginFragment.getNewInstance(),false,R.id.container);
+        replaceFragment(GetMentorFragment.getNewInstance(),false,R.id.container);
 
     }
 

@@ -17,10 +17,10 @@
 
     <hackathonayush.mentor.Model.MentorBoldTextView
         android:id="@+id/logo_text"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="@dimen/margin_10dp"
+        android:gravity="center"
         android:layout_marginTop="@dimen/margin_30dp"
         android:text="E  L  I  T  E"
         android:textColor="@color/white"

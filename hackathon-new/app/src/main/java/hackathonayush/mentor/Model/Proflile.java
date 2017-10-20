@@ -31,6 +31,10 @@ public class Proflile {
         return techs;
     }
 
+
+    public Proflile() {
+    }
+
     public Proflile(String name, String email, String techs) {
         this.name = name;
         this.email = email;
