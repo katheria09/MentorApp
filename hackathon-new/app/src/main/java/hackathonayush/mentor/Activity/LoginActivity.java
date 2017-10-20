@@ -1,5 +1,7 @@
 package hackathonayush.mentor.Activity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +12,12 @@ import hackathonayush.mentor.R;
 
 public class LoginActivity extends MentorSingleFragmentActivity {
 
+
+    public static Intent getNewInstance(Context context) {
+        Intent intent = new Intent(context, LoginActivity.class);
+        return intent;
+
+    }
 
     @Override
     protected Fragment createFragment() {

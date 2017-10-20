@@ -27,6 +27,6 @@ public class SharedPrefs {
 
     public static int getID(Activity activity) {
         SharedPreferences sharedPref = activity.getPreferences(Context.MODE_PRIVATE);
-        return sharedPref.getInt("id", 0);
+        return sharedPref.getInt("id", 1);
     }
 }
