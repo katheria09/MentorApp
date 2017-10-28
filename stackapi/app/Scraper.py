@@ -111,6 +111,5 @@ def start(question):
 		    return " Cannot find What you, looking for !"
     except:
         return "Sorry I don't get what you say!"
-#question = raw_input('Input You Queries: ')
 if __name__ == '__main__':
     start(question)
