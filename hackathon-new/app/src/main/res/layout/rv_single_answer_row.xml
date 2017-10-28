@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_30dp">
+
+    <hackathonayush.mentor.Model.MentorRegularTextView
+        android:id="@+id/answer"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp" />
+
+    <hackathonayush.mentor.Model.MentorLightTextView
+        android:id="@+id/name"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textSize="@dimen/textSize_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:orientation="horizontal">
+
+        <hackathonayush.mentor.Model.MentorLightTextView
+            android:drawableLeft="@drawable/ic_thumb_up_black_24dp"
+            android:id="@+id/thumbs_up"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:padding="@dimen/margin_5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:drawableTint="@color/select" />
+
+        <hackathonayush.mentor.Model.MentorLightTextView
+            android:drawableRight="@drawable/ic_thumb_down_black_36dp"
+            android:id="@+id/thumbs_down"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:padding="@dimen/margin_5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:drawableTint="@color/select" />
+    </LinearLayout>
+
+</LinearLayout>
