@@ -1,2 +1,2 @@
 # Mentor App
-This App was made for  IPEC HACKATHON.
+This App was made for  Ipec HACKATHON.
