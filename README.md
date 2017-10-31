@@ -1,2 +1,2 @@
-# Hackathon
-IPEC Hackathon Team ID -17IPECH031
+# Mentor App
+This App was made for HACKATHON.
